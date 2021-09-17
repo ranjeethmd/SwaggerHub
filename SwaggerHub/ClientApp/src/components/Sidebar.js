@@ -13,7 +13,7 @@ export const Sidebar = ({ organizationConfig, definitionList, getOrganizationDat
     return (
         <div className="side-bar">           
             <div className="side-bar-body">
-                <h3>API DOCS</h3>
+                <label>&lt;/&gt;</label>
                 <ul>
                     {
                         (definitionList || [])

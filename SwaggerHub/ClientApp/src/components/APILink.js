@@ -10,7 +10,7 @@ export const APILink = ({ apiLinkData, updateDefinitionLink, defaultDefinitionLi
 
     return (
         <div className={(defaultDefinitionLink === apiLink) ? "api-link api-link-clicked" : "api-link"} onClick={() => handleClick()}>
-            {name}
+            <span>{name}</span>
         </div>
     )
 }
