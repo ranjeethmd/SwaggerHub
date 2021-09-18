@@ -1,0 +1,299 @@
+{
+  "name": "Default listing",
+  "description": "Default registry listing",
+  "url": "apis/The_Empire",
+  "offset": 0,
+  "totalCount": 6,
+  "apis": [
+    {
+      "name": "Darth Library",
+      "description": "The Death Stars internal library catalog",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api.swaggerhub.com/apis/The_Empire/Darth_Library/1.0.0"
+        },
+        {
+          "type": "X-Version",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2018-07-24T21:07:26Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2018-07-25T00:46:47Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "true"
+        },
+        {
+          "type": "X-GitHub",
+          "url": ""
+        },
+        {
+          "type": "X-DockerHub",
+          "url": ""
+        },
+        {
+          "type": "X-Versions",
+          "value": "*1.0.0,2.0.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "2.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "Darth Ship Store",
+      "description": "If you are looking for more information on the ships currently maintained for by The Galactic Empire - youve come to the right place!",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api.swaggerhub.com/apis/The_Empire/Darth_Ships/1.1.0"
+        },
+        {
+          "type": "X-Version",
+          "value": "1.1.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2018-11-27T20:07:18Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2019-10-07T15:54:51Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "true"
+        },
+        {
+          "type": "X-GitHub",
+          "url": ""
+        },
+        {
+          "type": "X-DockerHub",
+          "url": ""
+        },
+        {
+          "type": "X-Versions",
+          "value": "1.0.0,1.0.0-oas3,*1.1.0,4.0.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "2.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "Droid Registry",
+      "description": "Droid Registry - [1.0.0]",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api.swaggerhub.com/apis/The_Empire/droid-registry/1.0.0"
+        },
+        {
+          "type": "X-Version",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2019-01-28T15:31:49Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2019-01-28T15:31:49Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "false"
+        },
+        {
+          "type": "X-Versions",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "3.0.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "Human (and other) Resources",
+      "description": "Retrieve information on Empire staff and subjects",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api.swaggerhub.com/apis/The_Empire/Human_etc_Resources/2.0.0"
+        },
+        {
+          "type": "X-Version",
+          "value": "2.0.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2018-11-08T19:30:06Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2018-11-08T20:32:13Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "true"
+        },
+        {
+          "type": "X-GitHub",
+          "url": ""
+        },
+        {
+          "type": "X-DockerHub",
+          "url": ""
+        },
+        {
+          "type": "X-Versions",
+          "value": "*2.0.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "2.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "Jedi Order Information",
+      "description": "Home for information on known Jedi and strategies",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api.swaggerhub.com/apis/The_Empire/Jedi_Order_Info/0.5.0"
+        },
+        {
+          "type": "X-Version",
+          "value": "0.5.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2018-11-08T18:18:12Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2018-11-08T18:18:12Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "false"
+        },
+        {
+          "type": "X-GitHub",
+          "url": ""
+        },
+        {
+          "type": "X-DockerHub",
+          "url": ""
+        },
+        {
+          "type": "X-Versions",
+          "value": "0.5.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "2.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "SWAPI",
+      "description": "Welcome to the swapi, the Star Wars API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. If you're after a native helper library then I suggest you scroll down and check out what's available. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it.",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api.swaggerhub.com/apis/The_Empire/swapi/1.0.0"
+        },
+        {
+          "type": "X-Version",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2019-12-10T16:50:03Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2019-12-10T16:53:35Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "false"
+        },
+        {
+          "type": "X-Versions",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "2.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}

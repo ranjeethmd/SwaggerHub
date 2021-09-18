@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerHub", "SwaggerHub\SwaggerHub.csproj", "{0E786249-023F-4E7E-814B-A617602EDBF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerHub", "SwaggerHub\SwaggerHub.csproj", "{0E786249-023F-4E7E-814B-A617602EDBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerHub.Data", "SwaggerHub.Data\SwaggerHub.Data.csproj", "{655D345C-FCA4-4610-AA5E-FC486C6FF071}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0E786249-023F-4E7E-814B-A617602EDBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E786249-023F-4E7E-814B-A617602EDBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E786249-023F-4E7E-814B-A617602EDBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655D345C-FCA4-4610-AA5E-FC486C6FF071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655D345C-FCA4-4610-AA5E-FC486C6FF071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655D345C-FCA4-4610-AA5E-FC486C6FF071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655D345C-FCA4-4610-AA5E-FC486C6FF071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

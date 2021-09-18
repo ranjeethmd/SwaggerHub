@@ -1,14 +1,25 @@
-.App {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+* {
+    position:relative;
+}
+
+.col-25 {
+    height: 85vh;
+    width: 15vw;
+    float: left;
+    overflow-y: auto;
+}
+
+.col-75 {
+    height: 85vh;
+    width: 84vw;
+    float: left;
+    overflow-y: auto;
 }
 
 .side-bar {
     display: flex;
     flex-direction: column;
-    width: 15vw;
-    height: 100vh;
+    
 }
 
     .side-bar ul {
@@ -16,7 +27,7 @@
         padding: 0;        
         font-size: 0.85em;
         font-weight: 500;
-        color: rgba(0,0,0,0.5)
+        color: rgba(0,0,0,0.4);
     }
 
 .banner-header {
@@ -26,6 +37,8 @@
     padding: 10px;
     color: whitesmoke;
     background-color: #2d383a;    
+    height:10vh;
+    margin-bottom:2.5vh;
 }
 
  .banner-header img {
@@ -55,22 +68,40 @@
     padding: 8px 5px 8px 10px;   
 }
 
-    .api-link-clicked {
-        cursor: pointer;
-        border-right: 2px solid #06a11a;
-        transition: all .1s ease;
-    }
+.api-link-clicked {
+    cursor: pointer;
+    border-right: 2px solid #06a11a;
+    transition: all .1s ease;
+    color: rgba(0,0,0,0.6);
+}
 
 .api-link:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,.05);
     border-radius: 4px;
-    border:none !important;
+    border: none !important;
+    color: rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    background-clip: content-box;
 }
 
 
-#api-data {
-    width: 90vw;
-    padding-left: 30px;
-    overflow-y: scroll;
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(45,116,213,1);
+    }
+
+ 

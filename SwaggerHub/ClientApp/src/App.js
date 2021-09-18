@@ -15,6 +15,16 @@ export const App = () => {
 
     const [definitionList, setDefinitionList] = useState();
 
+
+    useEffect(() => {
+        const title = document.getElementById("title");
+        title.innerHTML = organizationConfig.displayName;
+
+        const favicon = document.getElementById("favicon");
+        favicon.href = organizationConfig.favIcon;
+
+    }, []);
+
     useEffect(() => {
 
         SwaggerUI({
@@ -63,7 +73,7 @@ export const App = () => {
     return (
         <>
             <Banner organizationConfig={organizationConfig} />
-            <div className="App">
+            <div className="col-25">
                 <Sidebar
                     organizationConfig={organizationConfig}
                     definitionList={definitionList}
@@ -71,8 +81,10 @@ export const App = () => {
                     getOrganizationData={getOrganizationData}
                     updateDefinitionLink={updateDefinitionLink}
                 />
-                <div id="api-data" />
             </div>
+            <div className="col-75">
+                <div id="api-data" />
+            </div>       
         </>
     );
 
