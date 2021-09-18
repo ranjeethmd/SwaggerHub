@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace SwaggerHub.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("apis/[controller]")]
     public class OrganizationController : ControllerBase
     {        
         private readonly ILogger<OrganizationController> _logger;
@@ -24,9 +24,15 @@ namespace SwaggerHub.Controllers
         }
 
         [HttpGet("{name}")]
-        public Organization Get(string name)
+        public async Task<Organization> Get(string name)
         {            
-            return new Organization();
+            return await _repository.GetOrganizationApisAsync(name);
+        }
+
+        [HttpGet()]
+        public async Task<OrganizationConfig> Get()
+        {
+            return await _repository.GetOriganizationConfigAsync("dummy");
         }
     }
 }

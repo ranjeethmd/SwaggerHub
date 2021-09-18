@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { Banner } from './components/Banner'
 import SwaggerUI from 'swagger-ui';
-import Config from './organization_config.json';
 import '../node_modules/swagger-ui/dist/swagger-ui.css'
 
 import './custom.css'
@@ -11,19 +10,41 @@ export const App = () => {
 
     const [definitionLink, setDefinitionLink] = useState("https://petstore.swagger.io/v2/swagger.json");
 
-    const [organizationConfig] = useState(Config.orgData);
+    const [organizationConfig, setOrganizationalConfig] = useState({});
 
     const [definitionList, setDefinitionList] = useState();
 
+    const getConfigData = async () => {
+
+        const response = await fetch('/apis/organization', {
+            method: 'GET'
+        });
+
+        if (response.ok) {
+            const config = await response.json();
+            setOrganizationalConfig(config.orgData);
+        }
+        else {
+            throw new Error('There was an issue requesting the API');
+        }
+    }; 
 
     useEffect(() => {
+
+        getConfigData();
+        
+
+    }, []);
+
+    useEffect(() => {        
+
         const title = document.getElementById("title");
         title.innerHTML = organizationConfig.displayName;
 
         const favicon = document.getElementById("favicon");
         favicon.href = organizationConfig.favIcon;
 
-    }, []);
+    }, [organizationConfig]);
 
     useEffect(() => {
 
@@ -37,12 +58,14 @@ export const App = () => {
 
 
     const swaggerhub = (inputMethod, inputResource, inputParams) => {
-        let url = ""
-        if (inputParams) {
-            url = "https://api.swaggerhub.com/apis/" + inputResource + "?" + inputParams
-        } else {
-            url = "https://api.swaggerhub.com/apis/" + inputResource
-        }
+        let url = `/apis/organization/${inputResource}`;
+
+        console.log(url);
+        //if (inputParams) {
+        //    url = "https://api.swaggerhub.com/apis/" + inputResource + "?" + inputParams
+        //} else {
+        //    url = "/apis/" + inputResource
+        //}
 
         return fetch(url, {
             method: inputMethod
@@ -84,7 +107,7 @@ export const App = () => {
             </div>
             <div className="col-75">
                 <div id="api-data" />
-            </div>       
+            </div>
         </>
     );
 

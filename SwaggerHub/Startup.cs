@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SwaggerHub.Extensions;
 
 namespace SwaggerHub
 {
@@ -28,6 +29,8 @@ namespace SwaggerHub
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            services.Bootstrap<Bootstrap>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

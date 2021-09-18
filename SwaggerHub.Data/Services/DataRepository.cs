@@ -17,5 +17,11 @@ namespace SwaggerHub.Data.Services
             var json = await File.ReadAllTextAsync(@"C:\Users\ranje\source\repos\SwaggerHub\org.json");
             return JsonConvert.DeserializeObject<Organization>(json);
         }
+
+        public async Task<OrganizationConfig> GetOriganizationConfigAsync(string orgName)
+        {
+            var json = await File.ReadAllTextAsync(@"C:\Users\ranje\source\repos\SwaggerHub\config.json");
+            return JsonConvert.DeserializeObject<OrganizationConfig>(json);
+        }
     }
 }

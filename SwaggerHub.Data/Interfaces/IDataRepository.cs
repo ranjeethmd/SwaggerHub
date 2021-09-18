@@ -9,6 +9,7 @@ namespace SwaggerHub.Data.Interfaces
 {
     public interface IDataRepository
     {
+        Task<OrganizationConfig> GetOriganizationConfigAsync(string orgName);
         Task<Organization> GetOrganizationApisAsync(string orgName);
     }
 }
