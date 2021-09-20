@@ -3,7 +3,7 @@
   "description": "Default registry listing",
   "url": "apis/The_Empire",
   "offset": 0,
-  "totalCount": 6,
+  "totalCount": 7,
   "apis": [
     {
       "name": "Darth Library",
@@ -276,6 +276,49 @@
         {
           "type": "X-Published",
           "value": "false"
+        },
+        {
+          "type": "X-Versions",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Private",
+          "value": "false"
+        },
+        {
+          "type": "X-OASVersion",
+          "value": "2.0"
+        },
+        {
+          "type": "X-Notifications",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "Test.Api",
+      "description": "Welcome to the swapi, the Star Wars API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. If you're after a native helper library then I suggest you scroll down and check out what's available. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it.",
+      "tags": [],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://localhost:5003/swagger/v1/swagger.json"
+        },
+        {
+          "type": "X-Version",
+          "value": "1.0.0"
+        },
+        {
+          "type": "X-Created",
+          "value": "2019-12-10T16:50:03Z"
+        },
+        {
+          "type": "X-Modified",
+          "value": "2019-12-10T16:53:35Z"
+        },
+        {
+          "type": "X-Published",
+          "value": "true"
         },
         {
           "type": "X-Versions",

@@ -76,9 +76,9 @@
 
 .api-link:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,.05);
-    border-radius: 4px;
-    border: none !important;
+    background-color: rgba(0,255,0,.1);
+    border-radius: 0;
+    
     color: rgba(0,0,0,0.6);
 }
 

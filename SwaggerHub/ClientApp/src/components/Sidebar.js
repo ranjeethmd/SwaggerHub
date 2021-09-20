@@ -8,7 +8,8 @@ export const Sidebar = ({ organizationConfig, definitionList, getOrganizationDat
     if (!definitionList) {
         getOrganizationData(organizationConfig.orgName)
     } 
-    
+
+    console.log(definitionList);
 
     return (
         <div className="side-bar">           

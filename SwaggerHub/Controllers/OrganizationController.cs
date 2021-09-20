@@ -24,13 +24,13 @@ namespace SwaggerHub.Controllers
         }
 
         [HttpGet("{name}")]
-        public async Task<Organization> Get(string name)
+        public async Task<Organization> GetApisAsync(string name)
         {            
             return await _repository.GetOrganizationApisAsync(name);
         }
 
         [HttpGet()]
-        public async Task<OrganizationConfig> Get()
+        public async Task<OrganizationConfig> GetConfigsAsync()
         {
             return await _repository.GetOriganizationConfigAsync("dummy");
         }
